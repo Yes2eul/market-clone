@@ -25,6 +25,7 @@ header {
 
 .info-bar__icons img {
   width: 20px;
+  margin-right: 5px;
 }
 
 /* 메뉴 바 */
