@@ -12,7 +12,6 @@ const checkPassword = () => {
 const handleSubmit = async (event) => {
   event.preventDefault();
   const formData = new FormData(form);
-
   const sha256Password = sha256(formData.get("password"));
   formData.set("password", sha256Password);
 
@@ -27,7 +26,7 @@ const handleSubmit = async (event) => {
 
     if (data === "200") {
       alert("회원가입에 성공했습니다.");
-      window.location.pathname = "login.html";
+      window.location.pathname = "/login.html";
     }
   } else {
     div.innerText = "비밀번호가 같지 않습니다.";
